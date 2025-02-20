@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Monitoramento de movimentações dos pallets no armazém.">
+    <meta name="author" content="Seu Nome ou Empresa">
+    <title>Monitoramento de Movimentações</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <noscript>
+        <p>O JavaScript está desativado. Algumas funcionalidades podem não funcionar corretamente.</p>
+    </noscript>
+    <main class="container">
+        <h1>Monitoramento de Movimentações</h1>
+        <table>
+            <caption>Movimentações dos Pallets</caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Posição</th>
+                    <th>Estado</th>
+                    <th>Data e Hora</th>
+                </tr>
+            </thead>
+            <tbody id="movimentacoes-tbody">
+                <!-- Movimentações serão adicionadas aqui -->
+            </tbody>
+        </table>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
