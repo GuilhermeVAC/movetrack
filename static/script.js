@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', async function() {
             return;
         }
 
-        // Limpa o conteúdo existente, se necessário
+        // Limpa o conteúdo existente (caso a tabela seja atualizada)
         tbody.innerHTML = '';
 
         // Verifica se os dados retornados são um array

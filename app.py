@@ -6,6 +6,7 @@ import os
 app = Flask(__name__)
 
 # Configuração do banco de dados utilizando variáveis de ambiente (ou valores padrão)
+import os
 db_config = {
     "host": os.getenv("DB_HOST", "localhost"),
     "user": os.getenv("DB_USER", "root"),
